@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
   return {
     title: product.name,
-    description: product.description || `Comprá ${product.name} en Lummy`,
+    description: product.description || `Comprá ${product.name} en Loomy`,
     openGraph: {
       images: product.images[0] ? [product.images[0]] : [],
     },

@@ -11,7 +11,7 @@ export default function Footer() {
               href="/"
               className="font-[family-name:var(--font-syne)] text-3xl font-extrabold tracking-tight inline-block mb-4"
             >
-              LUMMY
+              LOOMY
             </Link>
             <p className="text-muted text-sm max-w-sm leading-relaxed mb-6">
               Moda con actitud. Prendas nuevas y vintage seleccionadas que
@@ -118,10 +118,10 @@ export default function Footer() {
               <li className="text-sm text-muted">Buenos Aires, Argentina</li>
               <li>
                 <a
-                  href="mailto:hola@lummy.com"
+                  href="mailto:hola@loomy.com"
                   className="text-sm text-muted hover:text-foreground transition-colors duration-300"
                 >
-                  hola@lummy.com
+                  hola@loomy.com
                 </a>
               </li>
             </ul>
@@ -131,7 +131,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-border-light flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-[11px] text-muted-light tracking-wide">
-            &copy; {new Date().getFullYear()} Lummy. Todos los derechos
+            &copy; {new Date().getFullYear()} Loomy. Todos los derechos
             reservados.
           </p>
           <p className="text-[11px] text-muted-light tracking-wide">

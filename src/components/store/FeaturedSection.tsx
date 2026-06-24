@@ -33,7 +33,7 @@ export default function FeaturedSection() {
           >
             <div>
               <p className="text-[11px] uppercase tracking-[0.3em] text-muted mb-6">
-                Por qué Lummy
+                Por qué Loomy
               </p>
               <h2 className="font-[family-name:var(--font-syne)] text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight mb-6">
                 Prendas que

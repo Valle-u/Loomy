@@ -3,12 +3,26 @@
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Suspense } from "react";
+import { Suspense, useEffect, useState } from "react";
 
 function ResultContent() {
   const searchParams = useSearchParams();
   const status = searchParams.get("status");
   const orderId = searchParams.get("order");
+  const paymentId = searchParams.get("payment_id") || searchParams.get("collection_id");
+  const [verified, setVerified] = useState(false);
+
+  // Verify payment with backend when returning from MercadoPago
+  useEffect(() => {
+    if (orderId && !verified) {
+      setVerified(true);
+      fetch("/api/payments/verify", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ orderId, paymentId }),
+      }).catch(() => {});
+    }
+  }, [orderId, paymentId, verified]);
 
   const configs = {
     success: {

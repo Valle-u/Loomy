@@ -114,6 +114,8 @@ export default function CheckoutPage() {
       });
 
       if (!mpRes.ok) {
+        // Rollback: cancel the order and restore stock
+        await fetch(`/api/orders/${order.id}`, { method: "DELETE" }).catch(() => {});
         setError("Error al crear el pago. Intentá de nuevo.");
         setLoading(false);
         return;

@@ -113,7 +113,7 @@ export default function AdminSidebar() {
         {/* Logo */}
         <div className="p-6 border-b border-white/10">
           <Link href="/admin" className="text-xl font-bold tracking-tighter">
-            LUMMY
+            LOOMY
           </Link>
           <p className="text-xs text-white/50 mt-1">Panel de Administración</p>
         </div>

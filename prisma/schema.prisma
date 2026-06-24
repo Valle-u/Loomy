@@ -64,6 +64,7 @@ model Product {
   featured    Boolean          @default(false)
   active      Boolean          @default(true)
   variants    ProductVariant[]
+  sections    SectionProduct[]
   createdAt   DateTime         @default(now())
   updatedAt   DateTime         @updatedAt
 
@@ -163,4 +164,33 @@ model Payment {
   updatedAt   DateTime @updatedAt
 
   @@map("payments")
+}
+
+// ==================== SECCIONES ====================
+
+model Section {
+  id          String           @id @default(cuid())
+  name        String
+  slug        String           @unique
+  description String?
+  image       String?
+  active      Boolean          @default(true)
+  position    Int              @default(0)
+  products    SectionProduct[]
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+
+  @@map("sections")
+}
+
+model SectionProduct {
+  id        String  @id @default(cuid())
+  sectionId String
+  section   Section @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+  productId String
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  position  Int     @default(0)
+
+  @@unique([sectionId, productId])
+  @@map("section_products")
 }

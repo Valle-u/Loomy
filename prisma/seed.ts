@@ -12,7 +12,7 @@ async function main() {
   const prisma = new PrismaClient({ adapter });
 
   // ==================== ADMIN USER ====================
-  const adminEmail = "admin@lummy.com";
+  const adminEmail = "admin@loomy.com";
   const adminPassword = "admin123";
 
   const existingAdmin = await prisma.user.findUnique({
@@ -24,7 +24,7 @@ async function main() {
     await prisma.user.create({
       data: {
         email: adminEmail,
-        name: "Admin Lummy",
+        name: "Admin Loomy",
         password: hashedPassword,
         role: "ADMIN",
       },
@@ -265,7 +265,7 @@ async function main() {
     {
       name: "Gorra Dad Hat Bordada",
       slug: "gorra-dad-hat-bordada",
-      description: "Gorra dad hat con logo Lummy bordado en el frente. Cierre ajustable de metal en la parte trasera. Algodón lavado para un look casual.",
+      description: "Gorra dad hat con logo Loomy bordado en el frente. Cierre ajustable de metal en la parte trasera. Algodón lavado para un look casual.",
       price: 12500,
       categorySlug: "accesorios",
       featured: true,
@@ -280,7 +280,7 @@ async function main() {
     {
       name: "Bolso Tote Bag Canvas",
       slug: "bolso-tote-bag-canvas",
-      description: "Tote bag de lona resistente con estampa exclusiva Lummy. Doble asa reforzada, bolsillo interior con cierre. Perfecto para el día a día.",
+      description: "Tote bag de lona resistente con estampa exclusiva Loomy. Doble asa reforzada, bolsillo interior con cierre. Perfecto para el día a día.",
       price: 15900,
       categorySlug: "accesorios",
       featured: false,

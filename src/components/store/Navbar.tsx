@@ -46,7 +46,7 @@ export default function Navbar() {
                 showSolid ? "text-foreground" : "text-background"
               }`}
             >
-              LUMMY
+              LOOMY
             </span>
           </Link>
 

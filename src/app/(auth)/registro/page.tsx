@@ -87,7 +87,7 @@ export default function RegisterPage() {
           href="/"
           className="font-[family-name:var(--font-syne)] text-3xl font-extrabold tracking-tight"
         >
-          LUMMY
+          LOOMY
         </Link>
         <p className="text-muted text-sm mt-3">Creá tu cuenta</p>
       </div>

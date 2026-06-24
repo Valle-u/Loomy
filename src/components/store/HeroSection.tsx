@@ -25,7 +25,7 @@ export default function HeroSection() {
       <motion.div className="absolute inset-0 z-0" style={{ y }}>
         <Image
           src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1920&q=80"
-          alt="Lummy Fashion"
+          alt="Loomy Fashion"
           fill
           className="object-cover opacity-40"
           priority
@@ -77,7 +77,7 @@ export default function HeroSection() {
               }}
               className="font-[family-name:var(--font-syne)] text-[clamp(3.5rem,12vw,11rem)] font-extrabold leading-[0.85] tracking-[-0.04em]"
             >
-              LUMMY
+              LOOMY
             </motion.h1>
           </div>
 

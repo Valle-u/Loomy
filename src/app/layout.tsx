@@ -17,8 +17,8 @@ const syne = Syne({
 
 export const metadata: Metadata = {
   title: {
-    default: "Lummy | Moda con Actitud",
-    template: "%s | Lummy",
+    default: "Loomy | Moda con Actitud",
+    template: "%s | Loomy",
   },
   description:
     "Descubrí prendas únicas que reflejan tu estilo personal. Ropa nueva y vintage con envío a todo el país.",

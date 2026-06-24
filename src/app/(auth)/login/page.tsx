@@ -46,7 +46,7 @@ export default function LoginPage() {
           href="/"
           className="font-[family-name:var(--font-syne)] text-3xl font-extrabold tracking-tight"
         >
-          LUMMY
+          LOOMY
         </Link>
         <p className="text-muted text-sm mt-3">Ingresá a tu cuenta</p>
       </div>
